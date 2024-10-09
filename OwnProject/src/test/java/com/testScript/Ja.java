@@ -9,6 +9,6 @@ public class Ja {
   @Test
   public void f() {
 	 String str="sukesh";
-	 String ch[]=str.split(str)
+	 String ch[]=str.split(str);
   }
 }
