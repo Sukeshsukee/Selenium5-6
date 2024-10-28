@@ -3,11 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.testScript.RunSpecificTestMethos">
+      <class name="com.testScript.CrossBrowserTesting">
         <methods>
-          <include name="method3"/>
+          <include name="browser"/>
         </methods>
-      </class> <!-- com.testScript.RunSpecificTestMethos -->
+      </class> <!-- com.testScript.CrossBrowserTesting -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

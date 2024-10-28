@@ -6,6 +6,10 @@
     <classes>
       <class name="crssBrowser.CrossBrowser_using_Parameter"/>
     </classes>
+    
+    
+    
+    
   </test> <!-- Test -->
   <test thread-count="5" name="Test1">
 	<parameter name="browser" value="edge"></parameter>

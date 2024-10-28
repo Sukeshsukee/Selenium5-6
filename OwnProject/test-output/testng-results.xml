@@ -1,31 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="3" total="4" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-10-07T16:41:49 IST" name="Default suite" finished-at="2024-10-07T16:41:49 IST" duration-ms="53">
+  <suite started-at="2024-10-28T18:49:39 IST" name="Default suite" finished-at="2024-10-28T18:49:39 IST" duration-ms="42">
     <groups>
     </groups>
-    <test started-at="2024-10-07T16:41:49 IST" name="Default test" finished-at="2024-10-07T16:41:49 IST" duration-ms="53">
-      <class name="com.testScript.RunSpecificTestMethos">
-        <test-method signature="method3()[pri:0, instance:com.testScript.RunSpecificTestMethos@d29f28]" started-at="2024-10-07T16:41:49 IST" name="method3" finished-at="2024-10-07T16:41:49 IST" duration-ms="13" status="FAIL">
-          <exception class="java.lang.AssertionError">
+    <test started-at="2024-10-28T18:49:39 IST" name="Default test" finished-at="2024-10-28T18:49:39 IST" duration-ms="42">
+      <class name="com.testScript.CrossBrowserTesting">
+        <test-method signature="browser(java.lang.String)[pri:0, instance:com.testScript.CrossBrowserTesting@6babf3bf]" started-at="2024-10-28T18:49:39 IST" name="browser" finished-at="2024-10-28T18:49:39 IST" duration-ms="0" status="FAIL">
+          <exception class="org.testng.TestNGException">
             <message>
-              <![CDATA[null]]>
+              <![CDATA[
+Parameter 'browser' is required by @Test on method browser but has not been marked @Optional or defined
+in /private/var/folders/q2/ng2gfh6n2_151y651mwt0dxc0000gr/T/testng-eclipse-1227245223/testng-customsuite.xml]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.fail(Assert.java:106)
-at com.testScript.RunSpecificTestMethos.method3(RunSpecificTestMethos.java:23)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
-at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-at java.base/java.lang.reflect.Method.invoke(Method.java:568)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+              <![CDATA[org.testng.TestNGException: 
+Parameter 'browser' is required by @Test on method browser but has not been marked @Optional or defined
+in /private/var/folders/q2/ng2gfh6n2_151y651mwt0dxc0000gr/T/testng-eclipse-1227245223/testng-customsuite.xml
+at org.testng.internal.Parameters.createParams(Parameters.java:270)
+at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:884)
+at org.testng.internal.Parameters.handleParameters(Parameters.java:740)
+at org.testng.internal.ParameterHandler.handleParameters(ParameterHandler.java:59)
+at org.testng.internal.ParameterHandler.createParameters(ParameterHandler.java:38)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:791)
 at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
 at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
 at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
@@ -47,11 +47,11 @@ at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 ]]>
             </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+          </exception> <!-- org.testng.TestNGException -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- method3 -->
-      </class> <!-- com.testScript.RunSpecificTestMethos -->
+        </test-method> <!-- browser -->
+      </class> <!-- com.testScript.CrossBrowserTesting -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

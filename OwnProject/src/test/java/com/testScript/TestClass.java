@@ -53,7 +53,7 @@ public class TestClass  {
 		Select s=new Select(multi);
 		s.selectByIndex(0);
 		s.selectByIndex(1);
-	
+	driver.quit();
 		
 		
 	}}	

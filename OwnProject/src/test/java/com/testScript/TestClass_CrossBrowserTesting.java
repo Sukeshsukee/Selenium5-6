@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 import com.generic.BaseClass;
 import com.generic.POM;
 
-public class CrossBrowserTesting{
+public class TestClass_CrossBrowserTesting{
 	 
 	WebDriver driver;
 	

@@ -17,7 +17,7 @@ import org.testng.annotations.Test;
 
 import com.generic.FileUtils;
 
-public class DataProviderUsingExcel {
+public class TestClass4_DataProviderUsingExcel {
 
 	static {
 		System.setProperty("webdriver.chrome.driver", "/Users/avsukesh/Downloads/chromedriver-mac-x64/chromedriver");
@@ -40,6 +40,7 @@ public class DataProviderUsingExcel {
 		if("valid".equals(status)) {
 			
 			System.out.println("passed logout yes");
+			
 		}
 		
 	}

@@ -24,7 +24,7 @@ import org.testng.Reporter;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
-public class Assert {
+public class TestClass6_Assert {
 	static {
 		System.setProperty("webdriver.chrome.driver", "/Users/avsukesh/Downloads/chromedriver-mac-x64/chromedriver");
 	}
@@ -37,9 +37,10 @@ public class Assert {
 		driver.get("https://www.sudo.ws/");
 		String text = driver.findElement(By.id("what-is-sudo")).getText();
 		SoftAssert as=new SoftAssert();
-		AssertJUnit.assertEquals(text, "What is Sudo?");
-		
+		as.assertEquals(text, "What is Sudo?");
+		//AssertJUnit.assertEquals(text, "What is Sudo?");
 		as.assertAll();
+		driver.quit();
 	//	-------
 		/*
 		WebElement src = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("draggable")));
