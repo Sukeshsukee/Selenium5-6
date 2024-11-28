@@ -11,7 +11,4 @@ public class Count_words {
 			count++;
 		}
 		System.out.println(count);
-	}
-
-
-}
+	}}

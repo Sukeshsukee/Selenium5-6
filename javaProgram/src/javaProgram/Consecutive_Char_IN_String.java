@@ -3,22 +3,19 @@ package javaProgram;
 public class Consecutive_Char_IN_String {
 
 	public static void main(String[] args) {
+        String str="tester";
 		
-		String str="aabbcccddddddd";
-		int to = str.length();
-		int Alen = str.replaceAll("a", "").length();
-		int Blen = str.replaceAll("b", "").length();
-		int clen = str.replaceAll("c", "").length();
-		int Dlen = str.replaceAll("d", "").length();
-		int lo = to-Alen;
-		int mo = to-Blen;
-		int no = to-clen;
-		int oo = to-Dlen;
-		System.out.println("a= "+lo);
-		System.out.println("b= "+mo);
-		System.out.println("c= "+no);
-		System.out.println("d= "+oo);
-
+		int alpat = str.replaceAll("[t]", "").length();
+		int alpae =str.replaceAll("[e]", "").length();
+		int alpas =str.replaceAll("[s]", "").length();
+		int alpar =str.replaceAll("[r]", "").length();
+		System.out.println("t = "+(str.length()-alpat));
+		System.out.println("e = "+(str.length()-alpae));
+		System.out.println("s = "+(str.length()-alpas));
+		System.out.println("r = "+(str.length()-alpar));
 	}
+
+
+	
 
 }
