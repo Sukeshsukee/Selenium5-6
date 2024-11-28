@@ -20,12 +20,12 @@ public class GroupExecution {
 	
 	
 	@Test
-	(groups={"smoke"})
+	(groups={"smoke","regression"})
 	public void a1() {
 		
 		System.out.println("A3");
 	}
-	@Test (groups={"regression"})
+	@Test (groups="regression")
 	public void a2() {
 		
 		System.out.println("A3");

@@ -14,6 +14,7 @@ import org.openqa.selenium.Dimension;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.Select;
@@ -25,29 +26,19 @@ public class Practice {
 		System.setProperty("webdriver.chrome.driver", "/Users/avsukesh/Downloads/chromedriver-mac-x64/chromedriver");
 	}
   @Test
-  public void sample() throws AWTException, InterruptedException {
+  public void sample() throws InterruptedException{
 	  WebDriver driver=new ChromeDriver();
-	  driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  driver.manage().window().maximize();
+		 driver.get("https://practice.expandtesting.com/upload");
+		 WebElement fileupload = driver.findElement(By.id("fileInput"));
+		 String file = "/Users/avsukesh/Downloads/\\#2.txt";
+		 fileupload.sendKeys(file);
+		 Thread.sleep(7000);
+	 String s3 = new String("Welcome");
+	 String s4 = new String("Welcome");
+	 System.out.println(s3==s4);
+	 System.out.println(s3.equals(s4));  // This will return true, since both strings have the same value.
+	 System.out.println(s3==s4); //The expression s3 == s4 will return false, because s3 and s4 refer to different objects in memory.
 
-	 driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-	  driver.get("https://www.globalsqa.com/demo-site/draganddrop/");
-	  WebDriverWait wait=new WebDriverWait(driver, 5);
-	  
-	  
-	  Actions a=new Actions(driver);
-	  Thread.sleep(2000);
-	  WebElement src = wait.until(ExpectedConditions.visibilityOfElementLocated(By.linkText("View larger")));
-	  Thread.sleep(2000);
-	  WebElement target = wait.until(ExpectedConditions.visibilityOfElementLocated(By.id("trash")));
-	  Thread.sleep(2000);
-	  a.dragAndDrop(src, target).perform();
-	  
-	  driver.close();
-	  
-	
-	  
-	  
 	  }
 }	
 
