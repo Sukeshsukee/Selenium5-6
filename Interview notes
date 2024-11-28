@@ -72,3 +72,59 @@ Project zeera
 
 
 Accountancy
+Header  Status:     TestType:      Milestone:   priority :    Designer:  reference :   Always manual:  
+
+Description:  
+Pre-requisites: 
+
+Steps: 
+
+Expected Result: 
+
+
+
+Actual Result:
+
+
+High priority/ low sev   
+Low pro/low sev 
+
+
+High pr/ high sev 
+
+Low pr/high sev 
+
+
+String str=“Sukesh“;
+
+Int scount=Str.replaceAll(“s”,””).length();
+Int ucount=Str.replaceAll(“u”,””).length();
+Int kcount=Str.replaceAll(“k”,””).length();
+Int ecount=Str.replaceAll(“e”,””).length();
+Int hcount=Str.replaceAll(“h”,””).length();
+System.out.println(str.length()-scount);
+System.out.println(“s =”+str.length()-ucount);
+System.out.println(“u”+str.length()-kcount);
+System.out.println(“”str.length()-ecount);
+System.out.println(str.length()-hcount);
+
+Char ch[]=str.tocharArray();
+for(int I=1;i<=ch.length;i++){
+for(int j=I+2;j<=ch.length;j++){
+if(ch[I]==ch[j]){
+System.out.println(ch[I]);
+System.out.println(“s is” ch[I]);
+}
+
+}
+
+
+
+{ 
+
+
+
+
+(//div[@class='_58bkzq63 _3n8fna1ac _3n8fnays _3n8fnan7 _3n8fna1 _3n8fnabm _58bkzq2 _1i2djtb9 _1i2djt0'])
+
+
