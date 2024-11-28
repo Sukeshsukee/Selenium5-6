@@ -1,6 +1,6 @@
 package javaProgram;
 
-public class Max_ARRAY {
+public class Max_ARRAY_WithIndex {
 
 	public static void main(String[] args) {
 		int a[]={40,60,20,70,71};

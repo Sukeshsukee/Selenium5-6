@@ -3,7 +3,7 @@ package javaProgram;
 public class CheckARmStringNO {
 
 	public static void main(String[] args) {
-		int num=123;
+		int num=153;
 		int orgno=num;
 		int cubeno=0;
 
