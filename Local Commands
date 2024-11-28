@@ -1,0 +1,279 @@
+Local commands 
+
+Last login: Tue Jan  2 10:23:54 on ttys000
+/Users/avsukesh/.zprofile:1: command not found: brew
+/Users/avsukesh/.zshrc:2: command not found: nodenv
+avsukesh@c889f3ed9aa4 image % ls
+Dockerfile.template	etc			jest.config.js		jest.setup.js		package.json		pnpm-lock.yaml		pnpmfile.js		tsconfig.json
+cloud-scripts		fence.json		jest.config.perf.js	node_modules		packages		pnpm-workspace.yaml	scripts			usr
+avsukesh@c889f3ed9aa4 image % pwd 
+/Users/avsukesh/workplace/IhmCartwheel/src/IhmCartwheel/image
+avsukesh@c889f3ed9aa4 image % cd ..
+avsukesh@c889f3ed9aa4 IhmCartwheel % cd ..
+avsukesh@c889f3ed9aa4 src % ls
+IhmCartwheel
+avsukesh@c889f3ed9aa4 src % cd ..
+avsukesh@c889f3ed9aa4 IhmCartwheel % ls
+build		env		logs		packageInfo	packageInfo.bak	release-info	src
+avsukesh@c889f3ed9aa4 IhmCartwheel % cd ..
+avsukesh@c889f3ed9aa4 workplace % ls
+AWSCLIV2.pkg		IhmCartwheel		IhmCartwheel-20-12-2023	New			avsukesh
+avsukesh@c889f3ed9aa4 workplace % ls  
+avsukesh@c889f3ed9aa4 image % git status  
+On branch mainline
+Your branch is up to date with 'origin/mainline'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   pnpm-lock.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+avsukesh@c889f3ed9aa4 image % git branch  
+* mainline
+avsukesh@c889f3ed9aa4 image % git pull origin ECODASCO-CouponAds-V1.17         
+From ssh://git.amazon.com:2222/pkg/IhmCartwheel
+ * branch                ECODASCO-CouponAds-V1.17 -> FETCH_HEAD
+hint: You have divergent branches and need to specify how to reconcile them.
+hint: You can do so by running one of the following commands sometime before
+hint: your next pull:
+hint: 
+hint:   git config pull.rebase false  # merge
+hint:   git config pull.rebase true   # rebase
+hint:   git config pull.ff only       # fast-forward only
+hint: 
+hint: You can replace "git config" with "git config --global" to set a default
+hint: preference for all repositories. You can also pass --rebase, --no-rebase,
+hint: or --ff-only on the command line to override the configured default per
+hint: invocation.
+fatal: Need to specify how to reconcile divergent branches.
+avsukesh@c889f3ed9aa4 image % git status 
+On branch mainline
+Your branch is up to date with 'origin/mainline'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   pnpm-lock.yaml
+
+no changes added to commit (use "git add" and/or "git commit -a")
+avsukesh@c889f3ed9aa4 image % git branch  
+* mainline
+avsukesh@c889f3ed9aa4 image % git reset --hard 
+HEAD is now at bc6b605e6 P2 Test cases for TPOS after ARI removal
+avsukesh@c889f3ed9aa4 image % git fetch  
+remote: Enumerating objects: 1277, done.
+remote: Counting objects: 100% (685/685), done.
+remote: Compressing objects: 100% (382/382), done.
+remote: Total 382 (delta 308), reused 1 (delta 0), pack-reused 0
+Receiving objects: 100% (382/382), 161.03 KiB | 144.00 KiB/s, done.
+Resolving deltas: 100% (308/308), completed with 144 local objects.
+From ssh://git.amazon.com:2222/pkg/IhmCartwheel
+   bc6b605e6..3c6352544  mainline                                 -> origin/mainline
+   0e13900f3..a573ac91b  ECODASCO-1573-Ads-v1-cleanup             -> origin/ECODASCO-1573-Ads-v1-cleanup
+   745b6696d..bc2fcc1bc  IHMECO-22652-node-18.x-deploy            -> origin/IHMECO-22652-node-18.x-deploy
+   bcf94d4db..2ea646259  afs-recommended-metrics-ECODASCO-1728    -> origin/afs-recommended-metrics-ECODASCO-1728
+ * [new branch]          ditc-config-server                       -> origin/ditc-config-server
+   9de9fb294..eb80423d3  feature/IHMECO-31077-angular-update-17-3 -> origin/feature/IHMECO-31077-angular-update-17-3
+   ba5053db4..616908f25  hamilton-RST                             -> origin/hamilton-RST
+   284d3d38d..99a68505e  onboarding-education-weblab-removal      -> origin/onboarding-education-weblab-removal
+ * [new branch]          sarpertt-test                            -> origin/sarpertt-test
+avsukesh@c889f3ed9aa4 image % git checkout ECODASCO-CouponAds-V1.17
+branch 'ECODASCO-CouponAds-V1.17' set up to track 'origin/ECODASCO-CouponAds-V1.17'.
+Switched to a new branch 'ECODASCO-CouponAds-V1.17'
+avsukesh@c889f3ed9aa4 image % git branch 
+* ECODASCO-CouponAds-V1.17
+  mainline
+———————————————————————————
+avsukesh@c889f3ed9aa4 image % brazil ws clean 
+avsukesh@c889f3ed9aa4 image % brazil ws sync
+(FOR CLEANING ) ————————————————————————-—
+avsukesh@c889f3ed9aa4 ~ % cd /Users/avsukesh/workplace/
+avsukesh@c889f3ed9aa4 workplace % /Users/avsukesh/workplace/image
+zsh: no such file or directory: /Users/avsukesh/workplace/image
+avsukesh@c889f3ed9aa4 workplace % ls
+AWSCLIV2.pkg		IhmCartwheel-20-12-2023	avsukesh
+IhmCartwheel		New
+avsukesh@c889f3ed9aa4 workplace % pwd
+/Users/avsukesh/workplace
+avsukesh@c889f3ed9aa4 workplace % ls
+AWSCLIV2.pkg		IhmCartwheel-20-12-2023	avsukesh
+IhmCartwheel		New
+avsukesh@c889f3ed9aa4 workplace % cd IhmCartwheel/src/IhmCartwheel/image
+avsukesh@c889f3ed9aa4 image % 
+
+avsukesh@c889f3ed9aa4 image % export PATH="$HOME/.nodenv/bin:$PATH"
+avsukesh@c889f3ed9aa4 image % eval "$(nodenv init -)"
+
+——————————————————
+
+git switch ECODASCO-1658-maps-search-p6 
+For switching one branch to another 
+
+——————————————————
+
+
+I to Edit
+Take cursor 
+Esc 
+Shift + ;
+Wq + enter 
+
+Source ~/.zshrc  +Enter
+
+——————————————————
+avsukesh@c889f3ed9aa4 image % cd ..
+avsukesh@c889f3ed9aa4 IhmCartwheel % cd ..
+avsukesh@c889f3ed9aa4 src % cd ..
+avsukesh@c889f3ed9aa4 cart_wheel % cd ..
+avsukesh@c889f3ed9aa4 workplace % cd ..
+avsukesh@c889f3ed9aa4 /Volumes % cd ..
+avsukesh@c889f3ed9aa4 / % cd ..
+avsukesh@c889f3ed9aa4 / % cd ..
+avsukesh@c889f3ed9aa4 / % cd /Users/avsukesh/.ssh
+—————————————————————————————
+Pwd —> location path 
+List —>inside path list 
+________________________________________________
+
+vim ~/.ssh/known_hosts
+Dd
+Esc + shift + :wq + Enter
+Control X control O enter 
+WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED!
+
+Ssh into cart
+
+————————————————————————————
+
+curl -s http://127.0.0.1:5001/health | jq 'with_entries(select(.value.status == "UNHEALTHY"))'
+
+To check cart healthy
+——————————————————————————
+Should be in workspace or workplace 
+brazil ws create —root IhmEcoE2ETestRunner
+
+cd IhmEcoE2ETestRunner
+
+brazil ws use —p IhmEcoE2ETestRunner
+
+cd src/IhmEcoE2ETestRunner
+
+Create pacjkage 
+—————————————————————————
+
+brazil ws create --root ~/workplace/ES2Service --versionset ES2_username/development 
+brazil prefs --key packagecache.cacheRoot --delete --global 
+
+Failed to bootstrap /Users/avsukesh/workplace/IhmEcoE2ETestRunner/env/BrazilPlatformOverlayTargets-1.0/package: 
+
+Change it as yours like 
+brazil ws create --root ~/workplace/IhmEcoE2ETestRunner/env/BrazilPlatformOverlayTargets-1.0/package
+(It should work)
+——————————————————————
+On cloud 
+cd IhmCartwheel/src/IhmCartwheel/image
+————————————————————
+On local
+cd ~/workplace
+
+cd /Volumes/workplace/cart_wheel/src/IhmCartwheel/image
+———————————————————————
+For creating tunnel 
+
+npm run connect-dev-desktop dev-dsk-avsukesh-1b-4eb5bb28.eu-west-1.amazon.com
+
+—————————————————————
+ERROR cannot set permissions for file: /home/kubarush/.midway/cookie. Reason: Operation not permitted
+
+This works for me:
+
+rm -rf ~/.midway/cookie
+Then
+kinit -f && mwinit -o
+Was this answer helpful?
+
+——————————————————————
+
+ihm-eco-device-ping ihm-eco-device-beta.48b02d679106 --log-level=debug
+ihm-eco-device-ssh-iot ihm-eco-device-beta.48b02d679106
+ihm-eco-device-ssh-iot ihm-eco-device-prod-pdx.48b02d679106
+
+ihm-eco-device-ping ihm-eco-device-beta.48b02d76601f --log-level=debug
+ihm-eco-device-ssh-iot ihm-eco-device-beta.48b02d76601f
+
+ihm-eco-device-ping ihm-eco-device-beta.48b02d87f703--log-level=debug
+ihm-eco-device-ssh-iot ihm-eco-device-beta.48b02d87f703  ihm-eco-device-ping ihm-eco-device-beta.48b02d76655f--log-level=debug
+ihm-eco-device-ssh-iot ihm-eco-device-beta.48b02d76655f 
+
+——————————————————————————————
+
+Re-flash cart   https://w.amazon.com/bin/view/IHM/ECO/Software/Runbooks/Platform/SAAutomatedFlashingInstructions/#:~:text=failed%20to%20run.-,Reflash%20Cart,-This%20operation%20can
+
+sudo ihm-eco-ab-version --reboot (for reboot)
+——————————————————————————————————
+
+Cd ~ for comeback All
+————————————————————————————————
+Ihm-eco-e2e-test-reports-beta
+Apr-25-2024 - Smooth Ambler Automated Smoke and BAT Test Results - IhmEcoNvidiaJetsonABImage/sputnik-arm64v8@B6204786926
+
+
+—————————————————————————————
+Deploying feature branch 
+{
+  "showLocationPrivacyTermsInTnC": true,
+  "loginMethods": ["app", "guest"]
+}
+/Users/avsukesh/Documents/file.json 
+/Users/avsukesh/Documents/file2.json
+
+ihm-eco-config-ledger-put --dimensionId watch-avsukesh --dimensionType cart --stage beta --settings /Users/avsukesh/Documents/file.json 
+
+————————————————————————————————
+GitHub Password 
+
+URL= https://github.com/Sukeshsukee/Selenium5-6 name= Sukeshsukee
+password= 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
+
+———————————————————————————————
+
+/Users/avsukesh/Documents/file.json
+
+{
+"useAppProductCardTemplate": true,
+"useFlippableProductCard": true,
+"enableSponsoredProducts": true,
+"offlineCatalogPrefix": "catalog_0SPTest"
+} 
+  avsukesh@amazon.com zIyloe4Z7xQPOf425ZSO-e9NnCvS87CJOLhKlIrk3 
+https://lm7.testrail.io/index.php?/api/v2/ https://testrail.apps.aws.dev/index.php?/runs/overview/13
+
+—————————————————————————————
+
+cd ~/workplace/BT101/src/BT101Avsukesh
+git branch
+git pull origin ECODASCO-CouponAds-V1.17 
+git status 
+git fetch
+git checkout ECODASCO-CouponAds-V1.17
+
+
+git pull origin IHM_ECO_DEALS_PROMOTIONS_AFS_V1_757738
+
+CARTWHEEL_ENABLE_MAP=true CARTWHEEL_USE_INDEXED_CATALOG=true IHM_ECO_STORE_MAPS_AND_SEARCH_630155=‘T1’ npm run watch
+
+——————————————————————————————————————
+
+IHM_ECO_STORE_MAPS_AND_SEARCH_630155=‘T1’ npm run watch 
+nano ~/.zshrc
+(Add and control X , yes)
+To compile  source ~/.zshrc
+
+brazil workspace create --root AT103
+
+avsukesh@c889f3ed9aa4 image % source ~/.zshrc 
+avsukesh@c889f3ed9aa4 image % npm run conduit-login
+CARTWHEEL_TEST_USER_CUSTOMER_ID=A2UOPPIGOCC0B9 npm run watch
+CARTWHEEL_TEST_USER_CUSTOMER_ID=A2UOPPIGOCC0B9
+—————————————————————————————————————
