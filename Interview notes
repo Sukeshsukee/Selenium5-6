@@ -1,0 +1,74 @@
+
+public static void main(String[] args) throws Exception {
+ 
+ 
+String s1 = “Welcome”;
+String s2 = “Welcome”;
+String s3 = new String(“Welcome”);
+String s4 = new String(“Welcome”);
+ 
+ 
+what will be the output ?
+System.Out.Println(s1 == s2)
+System.Out.Println(s2 == s3)
+System.Out.Println(s1 == s3)
+System.Out.Println(s3==s4)
+
+try{
+int a = 2/0;
+}catch (ArithmeticException e){
+System.out.println("ArithmeticException ");
+} catch (Exception e){
+System.out.println("Exception");
+} catch (NullPointerException e){
+System.out.println("NullPointerException");
+}
+ 
+
+
+
+Initialise list and map
+
+Arraylist<Integer> al=new Arraylist<Integer>();
+al.add(12);
+
+HashMap<key, value> hm=new HashMap<key, value>();
+
+
+ublic static void main(String[] args) {    
+
+List<String> listOfWords = new List<>(); 
+
+listOfWords.add("Apple");
+listOfWords.add("Bat");
+listOfWords.add("Cat");
+listOfWords.add("Dog");
+listOfWords.set(2,"Fish");
+listOfWords.set(3,"Lion");
+listOfWords.remove(2);
+System.out.println(listOfWords);
+}
+
+//span[@class='s-heavy']
+
+
+Driver.findelememt(by.id(“twotabsearchtextbox”)).sendkeys(“apple”);
+
+Webelent<list> list=Driver.findelements(by.xpath(“//span[@class='s-heavy’]”));
+
+Int size=List.size();
+
+for(int I=0;i<=size;i++){
+String text=List.get(i).gettext();
+System.out.println(text);
+
+
+}
+Fileuopload
+Driver.findelement()
+
+
+Project zeera
+
+
+Accountancy
